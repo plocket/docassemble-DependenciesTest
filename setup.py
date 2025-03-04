@@ -46,14 +46,14 @@ def find_package_data(where='.', package='', exclude=standard_exclude, exclude_d
 setup(name='docassemble.DependenciesTest',
       version='0.0.1',
       description=('A docassemble extension.'),
-      long_description='# docassemble.DependenciesTest\n\nA docassemble extension.\n\n## Author\n\nmb.restless.tech@gmail.com\n\n',
+      long_description='# docassemble.DependenciesTest\r\n\r\nA docassemble extension.\r\n\r\n## Author\r\n\r\nmb.restless.tech@gmail.com\r\n\r\n',
       long_description_content_type='text/markdown',
       author='',
       author_email='someone@example.com',
       license='The MIT License (MIT)',
       url='https://docassemble.org',
       packages=find_namespace_packages(),
-      install_requires=['docassemble.AssemblyLine>=3.2.0', 'docassemble-AKA2JBranding @ https://github.com/A2JatAKCourts/docassemble-AKA2JBranding/archive/main.zip']
+      install_requires=['docassemble.AssemblyLine>=3.2.0'],
       zip_safe=False,
       package_data=find_package_data(where='docassemble/DependenciesTest/', package='docassemble.DependenciesTest'),
      )
